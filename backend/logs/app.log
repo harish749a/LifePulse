@@ -1,0 +1,130 @@
+2026-06-28 21:01:35,741 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-28 21:01:37,890 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-28 21:59:17,466 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-28 21:59:20,348 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-28 22:02:32,163 | INFO | sqlalchemy.engine.Engine | select pg_catalog.version()
+2026-06-28 22:02:32,163 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 22:02:32,165 | INFO | sqlalchemy.engine.Engine | select current_schema()
+2026-06-28 22:02:32,166 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 22:02:32,167 | INFO | sqlalchemy.engine.Engine | show standard_conforming_strings
+2026-06-28 22:02:32,168 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 22:02:32,170 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-28 22:02:32,176 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.password AS users_password, users.phone AS users_phone, users.is_active AS users_is_active, users.id AS users_id, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2026-06-28 22:02:32,179 | INFO | sqlalchemy.engine.Engine | [generated in 0.00380s] {'email_1': 'harish@test.com', 'param_1': 1}
+2026-06-28 22:02:36,233 | INFO | sqlalchemy.engine.Engine | ROLLBACK
+2026-06-28 22:04:35,143 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-28 22:04:35,144 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.password AS users_password, users.phone AS users_phone, users.is_active AS users_is_active, users.id AS users_id, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2026-06-28 22:04:35,144 | INFO | sqlalchemy.engine.Engine | [cached since 123s ago] {'email_1': 'harish749a@gmail.com', 'param_1': 1}
+2026-06-28 22:04:35,526 | INFO | sqlalchemy.engine.Engine | INSERT INTO users (first_name, last_name, email, password, phone, is_active) VALUES (%(first_name)s, %(last_name)s, %(email)s, %(password)s, %(phone)s, %(is_active)s) RETURNING users.id, users.created_at, users.updated_at
+2026-06-28 22:04:35,535 | INFO | sqlalchemy.engine.Engine | [generated in 0.00071s] {'first_name': 'Harish', 'last_name': 'A', 'email': 'harish749a@gmail.com', 'password': '$2b$12$h6RQt.TUFQaLZ2vNySv/jet.a8A3cnNIizLyrUqCuRIZS/jME/yeS', 'phone': '9876543210', 'is_active': True}
+2026-06-28 22:04:35,537 | INFO | sqlalchemy.engine.Engine | COMMIT
+2026-06-28 22:04:35,540 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-28 22:04:35,545 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name, users.last_name, users.email, users.password, users.phone, users.is_active, users.id, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s
+2026-06-28 22:04:35,545 | INFO | sqlalchemy.engine.Engine | [generated in 0.00104s] {'pk_1': 2}
+2026-06-28 22:04:35,550 | INFO | sqlalchemy.engine.Engine | ROLLBACK
+2026-06-28 22:05:07,643 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-28 22:05:07,644 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.password AS users_password, users.phone AS users_phone, users.is_active AS users_is_active, users.id AS users_id, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2026-06-28 22:05:07,645 | INFO | sqlalchemy.engine.Engine | [cached since 155.5s ago] {'email_1': 'harish749a@gmail.com', 'param_1': 1}
+2026-06-28 22:05:11,465 | INFO | sqlalchemy.engine.Engine | ROLLBACK
+2026-06-28 22:18:30,249 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-28 22:18:33,101 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-28 22:19:04,546 | INFO | sqlalchemy.engine.Engine | select pg_catalog.version()
+2026-06-28 22:19:04,546 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 22:19:04,548 | INFO | sqlalchemy.engine.Engine | select current_schema()
+2026-06-28 22:19:04,549 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 22:19:04,552 | INFO | sqlalchemy.engine.Engine | show standard_conforming_strings
+2026-06-28 22:19:04,552 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 22:19:04,553 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-28 22:19:04,560 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.password AS users_password, users.phone AS users_phone, users.is_active AS users_is_active, users.id AS users_id, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2026-06-28 22:19:04,562 | INFO | sqlalchemy.engine.Engine | [generated in 0.00064s] {'email_1': 'harish749a@gmail.com', 'param_1': 1}
+2026-06-28 22:19:07,852 | INFO | sqlalchemy.engine.Engine | ROLLBACK
+2026-06-28 22:22:49,309 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-28 22:22:51,719 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-28 22:23:29,217 | INFO | sqlalchemy.engine.Engine | select pg_catalog.version()
+2026-06-28 22:23:29,218 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 22:23:29,220 | INFO | sqlalchemy.engine.Engine | select current_schema()
+2026-06-28 22:23:29,220 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 22:23:29,223 | INFO | sqlalchemy.engine.Engine | show standard_conforming_strings
+2026-06-28 22:23:29,224 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 22:23:29,225 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-28 22:23:29,233 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.password AS users_password, users.phone AS users_phone, users.is_active AS users_is_active, users.id AS users_id, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2026-06-28 22:23:29,239 | INFO | sqlalchemy.engine.Engine | [generated in 0.00144s] {'email_1': 'harish749a@gmail.com', 'param_1': 1}
+2026-06-28 22:23:33,624 | INFO | sqlalchemy.engine.Engine | ROLLBACK
+2026-06-28 22:26:44,858 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-28 22:26:44,859 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.password AS users_password, users.phone AS users_phone, users.is_active AS users_is_active, users.id AS users_id, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2026-06-28 22:26:44,859 | INFO | sqlalchemy.engine.Engine | [cached since 195.6s ago] {'email_1': 'harish749a@gmail.com', 'param_1': 1}
+2026-06-28 22:26:45,244 | INFO | sqlalchemy.engine.Engine | UPDATE users SET password=%(password)s, updated_at=now() WHERE users.id = %(users_id)s
+2026-06-28 22:26:45,244 | INFO | sqlalchemy.engine.Engine | [generated in 0.00062s] {'password': '$2b$12$S5psc92Tkq0FXKb1SPj4SOnRlxbOfPNIbqSrAUlurBXftaEMS.V8.', 'users_id': 2}
+2026-06-28 22:26:45,260 | INFO | sqlalchemy.engine.Engine | COMMIT
+2026-06-28 22:26:45,263 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-28 22:26:45,265 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name, users.last_name, users.email, users.password, users.phone, users.is_active, users.id, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s
+2026-06-28 22:26:45,267 | INFO | sqlalchemy.engine.Engine | [generated in 0.00136s] {'pk_1': 2}
+2026-06-28 22:26:45,270 | INFO | sqlalchemy.engine.Engine | ROLLBACK
+2026-06-28 22:27:28,672 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-28 22:27:28,673 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.password AS users_password, users.phone AS users_phone, users.is_active AS users_is_active, users.id AS users_id, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2026-06-28 22:27:28,673 | INFO | sqlalchemy.engine.Engine | [cached since 239.4s ago] {'email_1': 'harish749a@gmail.com', 'param_1': 1}
+2026-06-28 22:27:29,054 | INFO | sqlalchemy.engine.Engine | ROLLBACK
+2026-06-28 22:31:44,469 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-28 23:11:14,123 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-28 23:11:16,856 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-28 23:14:46,252 | INFO | sqlalchemy.engine.Engine | select pg_catalog.version()
+2026-06-28 23:14:46,252 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 23:14:46,254 | INFO | sqlalchemy.engine.Engine | select current_schema()
+2026-06-28 23:14:46,255 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 23:14:46,257 | INFO | sqlalchemy.engine.Engine | show standard_conforming_strings
+2026-06-28 23:14:46,257 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-28 23:14:46,262 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-28 23:14:46,270 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.password AS users_password, users.phone AS users_phone, users.is_active AS users_is_active, users.id AS users_id, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2026-06-28 23:14:46,270 | INFO | sqlalchemy.engine.Engine | [generated in 0.00087s] {'email_1': 'harish749a@gmail.com', 'param_1': 1}
+2026-06-28 23:14:46,890 | INFO | sqlalchemy.engine.Engine | ROLLBACK
+2026-06-29 17:28:35,082 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-29 17:28:38,844 | INFO | LifePulse | LifePulse API started successfully.
+2026-06-29 17:30:37,625 | INFO | sqlalchemy.engine.Engine | select pg_catalog.version()
+2026-06-29 17:30:37,625 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-29 17:30:37,633 | INFO | sqlalchemy.engine.Engine | select current_schema()
+2026-06-29 17:30:37,634 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-29 17:30:37,637 | INFO | sqlalchemy.engine.Engine | show standard_conforming_strings
+2026-06-29 17:30:37,638 | INFO | sqlalchemy.engine.Engine | [raw sql] {}
+2026-06-29 17:30:37,639 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-29 17:30:37,650 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.password AS users_password, users.phone AS users_phone, users.is_active AS users_is_active, users.id AS users_id, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2026-06-29 17:30:37,651 | INFO | sqlalchemy.engine.Engine | [generated in 0.00102s] {'email_1': 'abc@example.com', 'param_1': 1}
+2026-06-29 17:30:38,207 | INFO | sqlalchemy.engine.Engine | INSERT INTO users (first_name, last_name, email, password, phone, is_active) VALUES (%(first_name)s, %(last_name)s, %(email)s, %(password)s, %(phone)s, %(is_active)s) RETURNING users.id, users.created_at, users.updated_at
+2026-06-29 17:30:38,207 | INFO | sqlalchemy.engine.Engine | [generated in 0.00108s] {'first_name': 'pand', 'last_name': 'dj', 'email': 'abc@example.com', 'password': '$2b$12$S0A2sraRzkOJ7XLpbFNqde4zUbRRRRHk.vMN/2AxN0SI6W4bq9Dzq', 'phone': '09876', 'is_active': True}
+2026-06-29 17:30:38,220 | INFO | sqlalchemy.engine.Engine | COMMIT
+2026-06-29 17:30:38,225 | INFO | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-06-29 17:30:38,228 | INFO | sqlalchemy.engine.Engine | SELECT users.first_name, users.last_name, users.email, users.password, users.phone, users.is_active, users.id, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s
+2026-06-29 17:30:38,229 | INFO | sqlalchemy.engine.Engine | [generated in 0.00060s] {'pk_1': 3}
+2026-06-29 17:30:38,234 | INFO | sqlalchemy.engine.Engine | ROLLBACK
